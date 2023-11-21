@@ -1,0 +1,69 @@
+/* Estilos de reset para todos los elementos, eliminando márgenes y rellenos predeterminados, y ajustando el modelo de caja */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el fondo del cuerpo del documento */
+body {
+    background-color: rgb(32, 31, 31);
+}
+
+/* Estilos para la barra de progreso */
+.barra {
+    /* Fondo de la barra */
+    background-color: #383838;
+    
+    /* Dimensiones y posicionamiento de la barra */
+    height: 45px;
+    width: 50%;
+    margin: 130px auto;
+    
+    /* Efecto de sombra en la barra */
+    box-shadow: inset 6px 6px 12px #303030, inset -6px -6px 12px #404040;
+    
+    /* Propiedades adicionales de la barra */
+    overflow: hidden;
+    border: none;
+    border-radius: 20rem; /* Radio de borde para dar forma redonda */
+
+}
+
+/* Estilos para la parte que indica el progreso en la barra */
+.progreso {
+    /* Dimensiones y color de la parte de progreso */
+    height: 100%;
+    width: 0;
+    background-color: aqua;
+    
+    /* Efecto de sombra en la parte de progreso */
+    box-shadow: 0 0 10px aqua, 0 0 20px aqua;
+    
+    /* Propiedades adicionales de la parte de progreso */
+    display: block;
+    border-radius: 20rem; /* Radio de borde para dar forma redonda */
+}
+
+/* Estilos para el elemento que muestra el porcentaje */
+.porcentaje {
+    /* Tamaño, fuente y estilo del texto del porcentaje */
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+    /* Alineación y posición del texto del porcentaje */
+    text-align: center;
+    transform: translateY(100px);
+    
+    /* Color del texto del porcentaje */
+    color: aqua;
+}
+
+/* Estilos adicionales cuando el cuerpo tiene la clase 'celebracion' */
+body.celebracion {
+    /* Fondo del cuerpo con una imagen de celebración */
+    background-image: url("../img/celebracion.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
